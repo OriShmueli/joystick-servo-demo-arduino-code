@@ -29,7 +29,7 @@ void loop() {
   unsigned long currentTime = millis();
   xValue = analogRead(VRX_PIN);
   yValue = analogRead(VRY_PIN);
-
+  
   while (Serial.available() > 0)    
   {
     if(!establishConnectionWithComputer){

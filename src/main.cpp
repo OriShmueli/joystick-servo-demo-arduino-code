@@ -22,8 +22,6 @@ int timesUntillDisconnection = 5;
 int xValue = 0;
 int yValue = 0;
 
-
-
 int PrevValueX = 0;
 int PrevValueY = 0;
 
@@ -50,6 +48,8 @@ void loop() {
       if(getByte == 'c'){
         
       }
+
+      
 
       if(getByte == 'ds'){
         establishConnectionWithComputer = false;
@@ -117,7 +117,7 @@ void TimerFunctionSendMessage(const char* message){
   }
 }
 
-bool CheckReceivedMessage(const char* message, const char* requiredMessage, unsigned long eventInterval){
+//bool CheckReceivedMessage(const char* message, const char* requiredMessage, unsigned long eventInterval){
   unsigned long previousTime = 0;
   bool sendErrorState = true;
   while(true){
